@@ -60,4 +60,16 @@ public class Student {
     public String getBrotherName() {
         return brotherName;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", hobby='" + hobby + '\'' +
+                ", fatherName='" + fatherName + '\'' +
+                ", motherName='" + motherName + '\'' +
+                ", brotherName='" + brotherName + '\'' +
+                '}';
+    }
 }

@@ -16,4 +16,13 @@ public class ClassRoom {
     public Student getStudent(String studentName) {
         return studentMap.get(studentName);
     }
+
+    public void studentUpdateName(Student student, String studentNewName) {
+        String oldName=student.getName();
+        studentMap.remove(oldName);
+
+        student.setName(studentNewName);
+        studentMap.put(studentNewName,student);
+
+    }
 }
