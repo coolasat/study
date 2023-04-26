@@ -46,4 +46,10 @@ public class StudentStories extends JUnitStories {
     public InjectableStepsFactory stepsFactory() {
         return new InstanceStepsFactory(configuration(), new StudentSteps());
     }
-}
+    
+    public int add(int i,int j)
+    {
+        //add a new function
+        return i+j;
+        
+    }
